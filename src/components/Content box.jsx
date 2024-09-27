@@ -22,7 +22,7 @@ Button.propTypes = {
 
 const ContentBox = () => {
   return (
-    <section className="h-screen my-auto flex items-center text-white">
+    <section className="sm:h-screen my-auto flex items-center text-white">
       <div className="space-y-4">
         {/* Header Section */}
         <div className="flex items-center gap-4">
