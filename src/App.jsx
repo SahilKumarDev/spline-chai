@@ -1,6 +1,6 @@
 import ContentBox from "./components/Content box";
 import SplineCoffee from "./components/Spline-coffee";
-import "./app.css";
+import "./App.css";
 
 function App() {
   return (
