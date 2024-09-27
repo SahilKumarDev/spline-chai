@@ -4,7 +4,7 @@ const Button = ({ href, label, className, target = "_self" }) => {
   return (
     <a href={href} target={target}>
       <button
-        className={`font-medium rounded-lg text-sm px-5 py-2.5 mb-2 ${className}`}
+        className={`font-medium rounded-lg text-sm px-5 py-2.5  sm:w-fit w-full ${className}`}
       >
         {label}
       </button>
@@ -23,10 +23,10 @@ Button.propTypes = {
 const ContentBox = () => {
   return (
     <section className="sm:h-screen my-auto flex items-center text-white">
-      <div className="space-y-4">
+      <div className="space-y-7 sm:space-y-4">
         {/* Header Section */}
-        <div className="flex items-center gap-4">
-          <h1 className="text-4xl font-bold goggle-font">
+        <div className="sm:flex sm:items-center sm:gap-4">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-3">
             Welcome to my website
           </h1>
           <Button
@@ -44,11 +44,11 @@ const ContentBox = () => {
             chai or code
           </span>{" "}
           that explains the reality behind the code with a detailed discussion
-          with Hitesh sir on their channel, Link below.
+          with Hitesh sir on their channel, chai or code link below.
         </h2>
 
         {/* Button Links Section */}
-        <div className="flex gap-5">
+        <div className="grid grid-cols-2 sm:flex gap-5">
           <Button
             href="https://www.youtube.com/@chaiaurcode"
             label="Chai or code"
